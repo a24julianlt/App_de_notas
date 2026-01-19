@@ -57,7 +57,7 @@
             android:background="@drawable/circle_bg"
             android:src="@drawable/add"
             android:scaleType="centerInside"
-            android:padding="15dp"
+            android:padding="20dp"
             android:contentDescription="Añadir nueva nota" />
 
     </FrameLayout>
