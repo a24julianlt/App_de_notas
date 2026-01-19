@@ -8,8 +8,8 @@
     <fragment
         android:id="@+id/ajustesFragment"
         android:name="com.example.appdenotas.AjustesFragment"
-        android:label="fragment_ajustes"
-        tools:layout="@layout/fragment_ajustes" >
+        android:label="Ajustes"
+        tools:layout="@layout/fragment_ajustes">
         <action
             android:id="@+id/action_ajustesFragment_to_politicaFragment"
             app:destination="@id/politicaFragment" />
@@ -17,8 +17,8 @@
     <fragment
         android:id="@+id/inicioFragment"
         android:name="com.example.appdenotas.InicioFragment"
-        android:label="fragment_inicio"
-        tools:layout="@layout/fragment_inicio" >
+        android:label="Mis notas"
+        tools:layout="@layout/fragment_inicio">
         <action
             android:id="@+id/action_inicioFragment_to_notaFragment"
             app:destination="@id/notaFragment" />
@@ -29,11 +29,11 @@
     <fragment
         android:id="@+id/notaFragment"
         android:name="com.example.appdenotas.NotaFragment"
-        android:label="fragment_nota"
+        android:label="Nota"
         tools:layout="@layout/fragment_nota" />
     <fragment
         android:id="@+id/politicaFragment"
         android:name="com.example.appdenotas.PoliticaFragment"
-        android:label="fragment_politica"
+        android:label="Política y privacidad"
         tools:layout="@layout/fragment_politica" />
 </navigation>

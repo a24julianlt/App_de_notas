@@ -5,7 +5,28 @@
         <item name="background">@color/white</item>
         <item name="color">@color/black</item>
         <item name="colorPrimary">@color/blue</item>
+
+        <item name="toolbarStyle">@style/Toolbar.AppDeNotas</item>
     </style>
 
-    <style name="Theme.AppDeNotas" parent="Base.Theme.AppDeNotas" />
+
+    <style name="TextAppearance.AppDeNotas.ToolbarTitle" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">40sp</item>
+    </style>
+
+    <style name="Toolbar.AppDeNotas" parent="Widget.AppCompat.Toolbar">
+        <item name="title">@string/app_name</item>
+        <item name="titleTextColor">?attr/color</item>
+        <item name="titleTextAppearance">@style/TextAppearance.AppDeNotas.ToolbarTitle</item>
+        <item name="titleTextStyle">@style/TextAppearance.AppDeNotas.ToolbarTitle</item>
+
+        <item name="android:background">?attr/background</item>
+
+        <item name="android:paddingTop">40dp</item>
+        <item name="android:paddingEnd">40dp</item>
+
+        <item name="contentInsetStart">40dp</item>
+        <item name="contentInsetEnd">40dp</item>
+    </style>
 </resources>

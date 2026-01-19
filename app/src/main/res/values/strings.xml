@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">App de notas</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="mis_notas">Mis notas</string>
+    <string name="notas">Notas</string>
+    <string name="ajustes">Ajustes</string>
+    <string name="politica">Política</string>
 </resources>
