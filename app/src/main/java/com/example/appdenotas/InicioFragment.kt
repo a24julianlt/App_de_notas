@@ -48,7 +48,9 @@ class InicioFragment : Fragment() {
             Lifecycle.State.RESUMED
         )
 
-
+        binding.add.setOnClickListener {
+            binding.root.findNavController().navigate(R.id.action_inicioFragment_to_notaFragment)
+        }
     }
 
     fun navigateToSettings() : Boolean {

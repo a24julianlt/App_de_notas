@@ -29,4 +29,9 @@
         <item name="contentInsetStart">40dp</item>
         <item name="contentInsetEnd">40dp</item>
     </style>
+
+    <style name="ShapeAppearance.App.Circle" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
 </resources>
