@@ -11,4 +11,12 @@
     <string name="borrar_nota">Borrar nota</string>
     <string name="atr_s">Atrás</string>
     <string name="imagen_de_buscar">Imagen de buscar</string>
+    <string name="tema">Tema: Claro</string>
+    <string name="ordenar_fecha">Ordenar: Fecha</string>
+    <string name="ordenar_titulo">Ordenar: Título</string>
+    <string name="imagen_de_ordenar">Imagen de ordenar</string>
+    <string name="ver_mosaico">Ver: Mosaico</string>
+    <string name="ver_lista">Ver: Lista</string>
+    <string name="imagen_de_ver">Imagen de ver</string>
+    <string name="pol_tica_de_privacidad">Política de privacidad</string>
 </resources>

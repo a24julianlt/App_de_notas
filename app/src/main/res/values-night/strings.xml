@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">App de notas</string>
+    <string name="mis_notas">Mis notas</string>
+    <string name="notas">Notas</string>
+    <string name="ajustes">Ajustes</string>
+    <string name="politica">Política</string>
     <string name="a_adir_nueva_nota">Añadir nueva nota</string>
     <string name="a_ade_texto_a_esta_nota">Añade texto a esta nota</string>
     <string name="a_ade_un_t_tulo_a_la_nota">Añade un título a la nota</string>
@@ -7,4 +12,12 @@
     <string name="borrar_nota">Borrar nota</string>
     <string name="atr_s">Atrás</string>
     <string name="imagen_de_buscar">Imagen de buscar</string>
+    <string name="tema">Tema: Oscuro</string>
+    <string name="ordenar_fecha">Ordenar: Fecha</string>
+    <string name="ordenar_titulo">Ordenar: Título</string>
+    <string name="imagen_de_ordenar">Imagen de ordenar</string>
+    <string name="ver_mosaico">Ver: Mosaico</string>
+    <string name="ver_lista">Ver: Lista</string>
+    <string name="imagen_de_ver">Imagen de ver</string>
+    <string name="pol_tica_de_privacidad">Política de privacidad</string>
 </resources>

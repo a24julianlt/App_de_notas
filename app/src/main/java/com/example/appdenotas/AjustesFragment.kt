@@ -25,6 +25,11 @@ class AjustesFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         setupMenu()
+
+
+        binding.politica.setOnClickListener {
+            findNavController().navigate(R.id.action_ajustesFragment_to_politicaFragment)
+        }
     }
 
     private fun setupMenu() {

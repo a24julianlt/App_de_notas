@@ -1,14 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="40dp"
+    android:paddingEnd="40dp"
+    android:paddingBottom="40dp"
     tools:context=".AjustesFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <view
+        class="android.view.View"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="" />
+        android:layout_height="5dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/line_background" />
 
-</FrameLayout>
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/tema"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:strokeColor="?attr/colorPrimary"
+        app:strokeWidth="5dp">
+
+        <TextView
+            android:id="@+id/txtTema"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="20dp"
+            android:text="@string/tema"
+            android:textSize="25sp" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switchTema"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="20dp"
+            android:gravity="center_vertical"
+            app:thumbTint="?attr/colorPrimary" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/ordenar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        app:strokeColor="?attr/colorPrimary"
+        app:strokeWidth="5dp">
+
+        <TextView
+            android:id="@+id/txtOrdenar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="20dp"
+            android:text="@string/ordenar_fecha"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/imgOrdenar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="20dp"
+            android:contentDescription="@string/imagen_de_ordenar"
+            android:gravity="center"
+            android:src="@drawable/calendar" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/ver"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        app:strokeColor="?attr/colorPrimary"
+        app:strokeWidth="5dp">
+
+        <TextView
+            android:id="@+id/txtVer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="20dp"
+            android:text="@string/ver_mosaico"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/imgVer"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="20dp"
+            android:contentDescription="@string/imagen_de_ver"
+            android:gravity="center"
+            android:src="@drawable/mosaic" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/politica"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="325dp"
+        app:strokeColor="?attr/colorPrimary"
+        app:strokeWidth="5dp">
+
+        <TextView
+            android:id="@+id/txtPolitica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="20dp"
+            android:text="@string/pol_tica_de_privacidad"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/imgPolitica"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="20dp"
+            android:contentDescription="@string/pol_tica_de_privacidad"
+            android:gravity="center"
+            android:src="@drawable/privacy" />
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>
