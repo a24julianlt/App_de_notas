@@ -30,7 +30,16 @@
         android:id="@+id/notaFragment"
         android:name="com.example.appdenotas.NotaFragment"
         android:label="Nota"
-        tools:layout="@layout/fragment_nota" />
+        tools:layout="@layout/fragment_nota">
+        <argument
+            android:name="titulo"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="texto"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
     <fragment
         android:id="@+id/politicaFragment"
         android:name="com.example.appdenotas.PoliticaFragment"

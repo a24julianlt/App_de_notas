@@ -8,7 +8,6 @@
     android:paddingStart="40dp"
     android:paddingEnd="40dp"
     android:paddingBottom="40dp"
-    android:theme="@style/Base.Theme.AppDeNotas"
     tools:context=".NotaFragment">
 
     <view
@@ -25,7 +24,7 @@
         android:autofillHints="Añade aquí el título de la nota"
         android:background="@android:color/transparent"
         android:hint="@string/a_ade_un_t_tulo_a_la_nota"
-        android:inputType="text"
+        android:inputType="text|textMultiLine"
         android:textSize="30sp"
         android:textStyle="bold" />
 
@@ -42,7 +41,7 @@
             android:autofillHints="Añade aquí el texto de la nota"
             android:background="@android:color/transparent"
             android:hint="@string/a_ade_texto_a_esta_nota"
-            android:inputType="text" />
+            android:inputType="text|textMultiLine" />
     </ScrollView>
 
     <FrameLayout
@@ -51,7 +50,7 @@
         android:layout_weight="1">
 
         <ImageButton
-            android:id="@+id/check"
+            android:id="@+id/delete"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:layout_gravity="bottom|start"
@@ -62,7 +61,7 @@
             android:src="@drawable/delete" />
 
         <ImageButton
-            android:id="@+id/add"
+            android:id="@+id/save_note"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:layout_gravity="bottom|end"
