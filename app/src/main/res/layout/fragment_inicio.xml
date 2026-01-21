@@ -27,12 +27,15 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_margin="5dp"
+                android:contentDescription="@string/imagen_de_buscar"
                 android:src="@drawable/search" />
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@android:color/transparent" />
+                android:autofillHints="Añade aquí el título para buscar la nota"
+                android:background="@android:color/transparent"
+                android:inputType="text" />
         </LinearLayout>
 
     </com.google.android.material.card.MaterialCardView>
@@ -58,7 +61,7 @@
             android:src="@drawable/add"
             android:scaleType="centerInside"
             android:padding="20dp"
-            android:contentDescription="Añadir nueva nota" />
+            android:contentDescription="@string/a_adir_nueva_nota" />
 
     </FrameLayout>
 

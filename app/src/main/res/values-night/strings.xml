@@ -1,9 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">App de notas</string>
-    <string name="mis_notas">Mis notas</string>
-    <string name="notas">Notas</string>
-    <string name="ajustes">Ajustes</string>
-    <string name="politica">Política</string>
     <string name="a_adir_nueva_nota">Añadir nueva nota</string>
     <string name="a_ade_texto_a_esta_nota">Añade texto a esta nota</string>
     <string name="a_ade_un_t_tulo_a_la_nota">Añade un título a la nota</string>

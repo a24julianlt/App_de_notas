@@ -15,29 +15,61 @@
         class="android.view.View"
         android:layout_width="match_parent"
         android:layout_height="5dp"
-        android:background="@drawable/line_background"
-        android:layout_marginBottom="20dp"/>
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/line_background" />
 
     <EditText
         android:id="@+id/titulo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:autofillHints="Añade aquí el título de la nota"
         android:background="@android:color/transparent"
-        android:hint="Añade un título a la nota"
+        android:hint="@string/a_ade_un_t_tulo_a_la_nota"
+        android:inputType="text"
         android:textSize="30sp"
         android:textStyle="bold" />
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="550dp">
 
         <EditText
             android:id="@+id/texto"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:autofillHints="Añade aquí el texto de la nota"
             android:background="@android:color/transparent"
-            android:hint="Añade texto a esta nota" />
+            android:hint="@string/a_ade_texto_a_esta_nota"
+            android:inputType="text" />
     </ScrollView>
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:id="@+id/check"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="bottom|start"
+            android:background="@drawable/white_circle_bg"
+            android:contentDescription="@string/borrar_nota"
+            android:padding="20dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/delete" />
+
+        <ImageButton
+            android:id="@+id/add"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="bottom|end"
+            android:background="@drawable/circle_bg"
+            android:contentDescription="@string/guardar_nota"
+            android:padding="20dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/check" />
+
+    </FrameLayout>
 </LinearLayout>
