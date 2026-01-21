@@ -2,6 +2,7 @@ package com.example.appdenotas
 
 import android.os.Bundle
 import android.view.*
+import androidx.appcompat.widget.Toolbar
 import androidx.core.view.MenuHost
 import androidx.core.view.MenuProvider
 import androidx.fragment.app.Fragment
@@ -23,13 +24,27 @@ class PoliticaFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         setupMenu()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        // Cuando el fragmento es visible, aplicamos el tamaño de letra pequeño
+        activity?.findViewById<Toolbar>(R.id.toolbar)?.let { toolbar ->
+            toolbar.setTitleTextAppearance(requireContext(), R.style.TextAppearance_AppDeNotas_ToolbarTitle_Small)
+        }
+    }
+
+    override fun onPause() {
+        super.onPause()
+        // Cuando el fragmento se va, restauramos el tamaño de letra original
+        activity?.findViewById<Toolbar>(R.id.toolbar)?.let { toolbar ->
+            toolbar.setTitleTextAppearance(requireContext(), R.style.TextAppearance_AppDeNotas_ToolbarTitle)
+        }
     }
 
     private fun setupMenu() {
         val menuHost: MenuHost = requireActivity()
-
         menuHost.addMenuProvider(object : MenuProvider {
             override fun onCreateMenu(menu: Menu, menuInflater: MenuInflater) {
                 menu.clear()

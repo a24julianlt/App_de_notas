@@ -20,4 +20,28 @@
     <string name="ver_lista">Ver: Lista</string>
     <string name="imagen_de_ver">Imagen de ver</string>
     <string name="pol_tica_de_privacidad">Política de privacidad</string>
+
+    <string name="introduccion">1. Introducción</string>
+    <string name="texto_introduccion">La presente Política de Privacidad describe cómo se gestionan los datos en la aplicación móvil [Nombre de tu aplicación], desarrollada como proyecto académico para el módulo de Programación Multimedia y Dispositivos Móviles. El objetivo principal de esta aplicación es permitir a las personas usuarias crear, editar y eliminar notas de forma local en su dispositivo.</string>
+
+    <string name="recogida_datos">2. Recogida de datos personales</string>
+    <string name="texto_recogida_datos">La aplicación no recopila, almacena ni transmite datos personales de las personas usuarias a servidores externos. Toda la información introducida (como el contenido de las notas) se guarda únicamente en el dispositivo del usuario.</string>
+
+    <string name="uso_info">3. Uso de la información</string>
+    <string name="texto_uso_info">Los datos introducidos por la persona usuaria se utilizan exclusivamente para el correcto funcionamiento de la aplicación, concretamente para: Crear notas, Editar notas, Eliminar notas y Mostrar la información almacenada. La aplicación no utiliza los datos con fines comerciales ni estadísticos.</string>
+
+    <string name="almacenamiento">4. Almacenamiento de datos</string>
+    <string name="texto_almacenamiento">Las notas creadas se almacenan de forma local en el dispositivo mediante almacenamiento interno de la aplicación. El desarrollador no tiene acceso a estos datos en ningún momento.</string>
+
+    <string name="permisos">5. Permisos de la aplicación</string>
+    <string name="texto_permisos">La aplicación no solicita permisos sensibles del dispositivo (como acceso a cámara, contactos, ubicación o micrófono), ya que no son necesarios para su funcionamiento.</string>
+
+    <string name="terceros">6. Compartición de datos con terceros</string>
+    <string name="texto_terceros">La aplicación no comparte ningún tipo de información con terceros.</string>
+
+    <string name="cambios">7. Cambios en la política de privacidad</string>
+    <string name="texto_cambios">Esta política de privacidad podría actualizarse en caso de realizar mejoras o cambios en la aplicación. Cualquier modificación será reflejada en este apartado.</string>
+
+    <string name="contacto">8. Contacto</string>
+    <string name="texto_contacto">Para cualquier duda relacionada con esta política de privacidad o con el funcionamiento de la aplicación, se puede contactar con el desarrollador a través del contexto académico en el que se presenta el proyecto.</string>
 </resources>

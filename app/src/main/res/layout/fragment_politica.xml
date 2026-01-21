@@ -1,14 +1,194 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?attr/background"
     tools:context=".PoliticaFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <view
+        class="android.view.View"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="" />
+        android:layout_height="5dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/line_background"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"/>
 
-</FrameLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="40dp"
+        android:scrollbarThumbVertical="?attr/colorPrimary"
+        android:paddingEnd="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- Introducción -->
+            <TextView
+                android:id="@+id/introduccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/introduccion"
+                android:textColor="?attr/color"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtintroduccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="@string/texto_introduccion"
+                android:textColor="?attr/color"
+                android:textSize="16sp" />
+
+            <!-- Recogida de datos -->
+            <TextView
+                android:id="@+id/recogida_datos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/recogida_datos"
+                android:textColor="?attr/color"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtrecogida_datos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="@string/texto_recogida_datos"
+                android:textColor="?attr/color"
+                android:textSize="16sp" />
+
+            <!-- Uso de la información -->
+            <TextView
+                android:id="@+id/uso_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/uso_info"
+                android:textColor="?attr/color"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtuso_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="@string/texto_uso_info"
+                android:textColor="?attr/color"
+                android:textSize="16sp" />
+
+            <!-- Almacenamiento de datos -->
+            <TextView
+                android:id="@+id/almacenamiento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/almacenamiento"
+                android:textColor="?attr/color"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtalmacenamiento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="@string/texto_almacenamiento"
+                android:textColor="?attr/color"
+                android:textSize="16sp" />
+
+            <!-- Permisos -->
+            <TextView
+                android:id="@+id/permisos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/permisos"
+                android:textColor="?attr/color"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtpermisos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="@string/texto_permisos"
+                android:textColor="?attr/color"
+                android:textSize="16sp" />
+
+            <!-- Compartición con terceros -->
+            <TextView
+                android:id="@+id/terceros"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/terceros"
+                android:textColor="?attr/color"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtterceros"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="@string/texto_terceros"
+                android:textColor="?attr/color"
+                android:textSize="16sp" />
+
+            <!-- Cambios -->
+            <TextView
+                android:id="@+id/cambios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/cambios"
+                android:textColor="?attr/color"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtcambios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="@string/texto_cambios"
+                android:textColor="?attr/color"
+                android:textSize="16sp" />
+
+            <!-- Contacto -->
+            <TextView
+                android:id="@+id/contacto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/contacto"
+                android:textColor="?attr/color"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtcontacto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="@string/texto_contacto"
+                android:textColor="?attr/color"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
