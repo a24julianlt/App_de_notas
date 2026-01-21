@@ -20,7 +20,7 @@
     <string name="imagen_de_ver">Imagen de ver</string>
     <string name="pol_tica_de_privacidad">Política de privacidad</string>
     <string name="introduccion">1. Introducción</string>
-    <string name="texto_introduccion">La presente Política de Privacidad describe cómo se gestionan los datos en la aplicación móvil [Nombre de tu aplicación], desarrollada como proyecto académico para el módulo de Programación Multimedia y Dispositivos Móviles. El objetivo principal de esta aplicación es permitir a las personas usuarias crear, editar y eliminar notas de forma local en su dispositivo.</string>
+    <string name="texto_introduccion">La presente Política de Privacidad describe cómo se gestionan los datos en la aplicación móvil App de notas, desarrollada como proyecto académico para el módulo de Programación Multimedia y Dispositivos Móviles. El objetivo principal de esta aplicación es permitir a las personas usuarias crear, editar y eliminar notas de forma local en su dispositivo.</string>
 
     <string name="recogida_datos">2. Recogida de datos personales</string>
     <string name="texto_recogida_datos">La aplicación no recopila, almacena ni transmite datos personales de las personas usuarias a servidores externos. Toda la información introducida (como el contenido de las notas) se guarda únicamente en el dispositivo del usuario.</string>

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="?attr/background"
     android:orientation="vertical"
     android:paddingStart="40dp"
     android:paddingEnd="40dp"
@@ -21,6 +22,7 @@
         android:id="@+id/tema"
         android:layout_width="match_parent"
         android:layout_height="70dp"
+        android:backgroundTint="?attr/background"
         app:strokeColor="?attr/colorPrimary"
         app:strokeWidth="5dp">
 
@@ -40,7 +42,8 @@
             android:layout_gravity="end|center_vertical"
             android:layout_marginEnd="20dp"
             android:gravity="center_vertical"
-            app:thumbTint="?attr/colorPrimary" />
+            app:thumbTint="?attr/colorPrimary"
+            app:trackTint="?attr/color" />
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
@@ -48,6 +51,7 @@
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_marginTop="30dp"
+        android:backgroundTint="?attr/background"
         app:strokeColor="?attr/colorPrimary"
         app:strokeWidth="5dp">
 
@@ -76,6 +80,7 @@
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_marginTop="30dp"
+        android:backgroundTint="?attr/background"
         app:strokeColor="?attr/colorPrimary"
         app:strokeWidth="5dp">
 
@@ -104,6 +109,7 @@
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_marginTop="325dp"
+        android:backgroundTint="?attr/background"
         app:strokeColor="?attr/colorPrimary"
         app:strokeWidth="5dp">
 
