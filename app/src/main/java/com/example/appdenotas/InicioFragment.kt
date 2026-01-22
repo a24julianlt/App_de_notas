@@ -1,6 +1,8 @@
 package com.example.appdenotas
 
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
 import android.view.*
 import androidx.core.os.bundleOf
 import androidx.core.view.MenuHost
@@ -44,13 +46,30 @@ class InicioFragment : Fragment() {
         binding.add.setOnClickListener {
             requireView().findNavController().navigate(R.id.action_inicioFragment_to_notaFragment)
         }
+
+        binding.searchEditText.addTextChangedListener(object : TextWatcher {
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
+
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                loadNotes(s.toString())
+            }
+
+            override fun afterTextChanged(s: Editable?) {}
+        })
     }
 
     private fun setupRecyclerView() {
         val isGridView = model.ver == getString(R.string.ver_mosaico)
         notaAdapter.setViewType(isGridView)
+
+        while (binding.listaNotas.itemDecorationCount > 0) {
+            binding.listaNotas.removeItemDecorationAt(0)
+        }
+
         binding.listaNotas.apply {
             layoutManager = if (isGridView) {
+                val spacing = resources.getDimensionPixelSize(R.dimen.grid_spacing)
+                addItemDecoration(GridSpacingItemDecoration(2, spacing, true))
                 GridLayoutManager(context, 2)
             } else {
                 LinearLayoutManager(context)
@@ -58,7 +77,7 @@ class InicioFragment : Fragment() {
         }
     }
 
-    private fun loadNotes() {
+    private fun loadNotes(query: String? = null) {
         val notesDir = requireContext().filesDir
         val noteFiles = notesDir.listFiles { _, name -> name.endsWith(".txt") }
         var notes = noteFiles?.map { file ->
@@ -67,6 +86,10 @@ class InicioFragment : Fragment() {
             val lastModified = file.lastModified()
             Nota(titulo, texto, lastModified)
         } ?: emptyList()
+
+        if (!query.isNullOrEmpty()) {
+            notes = notes.filter { it.titulo.contains(query, ignoreCase = true) }
+        }
 
         notes = if (model.ordenar == getString(R.string.ordenar_titulo)) {
             notes.sortedBy { it.titulo.lowercase() }

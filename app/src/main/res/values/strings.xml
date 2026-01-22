@@ -44,4 +44,5 @@
     <string name="texto_contacto">Para cualquier duda relacionada con esta política de privacidad o con el funcionamiento de la aplicación, se puede contactar con el desarrollador a través del contexto académico en el que se presenta el proyecto.</string>
 
     <string name="ultima_modificacion">Última modificación: </string>
+    <string name="buscar_por_t_tulo">Buscar por título</string>
 </resources>

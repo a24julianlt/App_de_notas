@@ -31,10 +31,12 @@
                 android:src="@drawable/search" />
 
             <EditText
+                android:id="@+id/search_edit_text"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:autofillHints="Añade aquí el título para buscar la nota"
                 android:background="@android:color/transparent"
+                android:hint="@string/buscar_por_t_tulo"
                 android:inputType="text" />
         </LinearLayout>
 
