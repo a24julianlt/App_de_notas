@@ -90,7 +90,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_marginStart="20dp"
-            android:text="@string/ver_mosaico"
+            android:text="@string/ver_lista"
             android:textSize="25sp" />
 
         <ImageView
@@ -101,7 +101,7 @@
             android:layout_marginEnd="20dp"
             android:contentDescription="@string/imagen_de_ver"
             android:gravity="center"
-            android:src="@drawable/mosaic" />
+            android:src="@drawable/list" />
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView

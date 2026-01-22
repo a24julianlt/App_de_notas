@@ -1,5 +1,7 @@
 package com.example.appdenotas
 
+import android.content.Context
+import android.content.res.Configuration
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.Menu
@@ -35,22 +37,39 @@ class AjustesFragment : Fragment() {
 
         setupMenu()
 
+        val sharedPreferences = requireActivity().getSharedPreferences("prefs", Context.MODE_PRIVATE)
+
+        val currentNightMode = resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK
+        binding.switchTema.isChecked = currentNightMode == Configuration.UI_MODE_NIGHT_YES
+
+        if (model.ordenar == getString(R.string.ordenar_titulo)) {
+            binding.txtOrdenar.text = getString(R.string.ordenar_titulo)
+            binding.imgOrdenar.setImageResource(R.drawable.title)
+        } else {
+            binding.txtOrdenar.text = getString(R.string.ordenar_fecha)
+            binding.imgOrdenar.setImageResource(R.drawable.calendar)
+        }
+
+        if (model.ver == getString(R.string.ver_lista)) {
+            binding.txtVer.text = getString(R.string.ver_lista)
+            binding.imgVer.setImageResource(R.drawable.list)
+        } else {
+            binding.txtVer.text = getString(R.string.ver_mosaico)
+            binding.imgVer.setImageResource(R.drawable.mosaic)
+        }
+
         binding.tema.setOnClickListener {
             binding.switchTema.isChecked = !binding.switchTema.isChecked
-            if (binding.switchTema.isChecked) {
-                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
-                binding.txtTema.text = getString(R.string.tema)
-            } else {
-                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
-            }
         }
 
         binding.switchTema.setOnCheckedChangeListener { _, isChecked ->
-            if (isChecked) {
-                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+            val mode = if (isChecked) {
+                AppCompatDelegate.MODE_NIGHT_YES
             } else {
-                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+                AppCompatDelegate.MODE_NIGHT_NO
             }
+            AppCompatDelegate.setDefaultNightMode(mode)
+            sharedPreferences.edit().putInt("theme_mode", mode).apply()
         }
 
         binding.ordenar.setOnClickListener {
